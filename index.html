@@ -1,111 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero + Carousel</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div>
 
-    <div class="carousel-wrapper">
-  <button class="carousel-arrow left" id="prevBtn">&#10094;</button>
+  <!-- ================= CAROUSEL ================= -->
+  <div class="carousel-wrapper">
+    <button class="carousel-arrow left" id="prevBtn">&#10094;</button>
 
-  <div class="carousel-container">
-    <div class="carousel-track" id="carouselTrack">
-      
-      <div class="carousel-card">
-        <img src="./images/desktop/Vitamins Image Desktop.jpg" alt="img" />
-        <p class="card-title">Vitamins</p>
-        <span class="card-number">--- 1</span>
+    <div class="carousel-container">
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="carousel-card">
+          <img src="./images/desktop/Vitamins Image Desktop.jpg" alt="img" />
+          <p class="card-title">Vitamins</p>
+          <span class="card-number">--- 1</span>
+        </div>
+
+        <div class="carousel-card">
+          <img src="./images/desktop/Suppliments image Desktop.jpg" alt="img" />
+          <p class="card-title">Supplements</p>
+          <span class="card-number">--- 2</span>
+        </div>
+
+        <div class="carousel-card">
+          <img src="./images/desktop/Medicines Image Desktop.jpg" alt="img" />
+          <p class="card-title">Medicines</p>
+          <span class="card-number">--- 3</span>
+        </div>
+
+        <div class="carousel-card">
+          <img src="https://picsum.photos/600/400?random=4" alt="img" />
+          <p class="card-title">Nutrition</p>
+          <span class="card-number">--- 4</span>
+        </div>
+
+        <div class="carousel-card">
+          <img src="https://picsum.photos/600/400?random=5" alt="img" />
+          <p class="card-title">Care</p>
+          <span class="card-number">--- 5</span>
+        </div>
+
+        <div class="carousel-card">
+          <img src="https://picsum.photos/600/400?random=6" alt="img" />
+          <p class="card-title">Wellness</p>
+          <span class="card-number">--- 6</span>
+        </div>
+
       </div>
-
-      <div class="carousel-card">
-        <img src="./images/desktop/Suppliments image Desktop.jpg" alt="img"/>
-        <p class="card-title">Supplements</p>
-        <span class="card-number">---2</span>
-      </div>
-
-      <div class="carousel-card">
-        <img src="./images/desktop/Medicines Image Desktop.jpg" alt="img"/>
-        <p class="card-title">Medicines</p>
-        <span class="card-number">--- 3</span>
-      </div>
-
-      <div class="carousel-card">
-        <img src="https://picsum.photos/600/400?random=4" alt="img"/>
-        <p class="card-title">Nutrition</p>
-        <span class="card-number">--- 4</span>
-      </div>
-
-      <div class="carousel-card">
-        <img src="https://picsum.photos/600/400?random=5" alt="img" />
-        <p class="card-title">Care</p>
-        <span class="card-number">--- 5</span>
-      </div>
-
-      <div class="carousel-card">
-        <img src="https://picsum.photos/600/400?random=6" alt="img"/>
-        <p class="card-title">Wellness</p>
-        <span class="card-number">--- 6</span>
-      </div>
-
     </div>
+
+    <button class="carousel-arrow right" id="nextBtn">&#10095;</button>
   </div>
 
-  <button class="carousel-arrow right" id="nextBtn">&#10095;</button>
-</div>
+  <!-- ================= HERO ================= -->
+  <div class="hero-wrapper">
 
-<div class="hero-wrapper">
-
-  <div class="hero-section">
-    <div class="hero-content">
+    <!-- IMAGE -->
+    <div class="hero-section">
+      <div class="hero-content">
         <p>About us</p>
-      <h2>What We Offer</h2>
-      <p>
-        We are the distributor of Siddhayu, a Subsidiary of 100 year old Baidhyanath Group of Companies, in the UAE. Trend offer a growing line of products to meet the health needs of companion animals. We will soon introduce the health products for poultry and large animals. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-      </p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+        <h2>What We Offer</h2>
+        <p>
+          We are the distributor of Siddhayu, a Subsidiary of 100 year old
+          Baidhyanath Group of Companies, in the UAE. Trend offer a growing line
+          of products to meet the health needs of companion animals. We will soon
+          introduce the health products for poultry and large animals.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy.
+        </p>
+
+        <button class="hero-btn">Read More</button>
+      </div>
     </div>
 
-    <button class="hero-btn">Read More</button>
+    <!-- FEATURE CARDS -->
+    <div class="feature-cards">
+
+      <div class="feature-card">
+        <img src="./images/desktop/Trust Icon desktop and ipad.svg" class="card-icon" alt="" />
+        <div class="card-text">
+          <h4>Trust</h4>
+          <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <img src="./images/Customer Experience Icon Desktop and Ipad.svg" class="card-icon" alt="" />
+        <div class="card-text">
+          <h4>Customer Experience</h4>
+          <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <img src="./images/Quality Icon Desktop and Ipad.svg" class="card-icon" alt="" />
+        <div class="card-text">
+          <h4>Quality</h4>
+          <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="feature-cards">
-
-    <div class="feature-card">
-      <img src="./images/desktop/Trust Icon desktop and ipad.svg" class="card-icon" alt="" />
-      <div class="card-text">
-        <h4>Trust</h4>
-        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
-      </div>
-    </div>
-
-    <div class="feature-card">
-      <img src="./images/Customer Experience Icon Desktop and Ipad.svg" class="card-icon" alt=""/>
-      <div class="card-text">
-        <h4>Customer Experience</h4>
-        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
-      </div>
-    </div>
-
-    <div class="feature-card">
-      <img src="./images/Quality Icon Desktop and Ipad.svg" class="card-icon" alt=""/>
-      <div class="card-text">
-        <h4>Quality</h4>
-        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-</div>
-
-<script src="carousel.js"></script>
-    
+  <script src="carousel.js"></script>
 </body>
 </html>
