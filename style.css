@@ -1,273 +1,244 @@
+
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    color: #333;
+}
 
+/* --- Carousel --- */
 
 .carousel-wrapper {
-  width: 1920px;
-  height: 404px;
-  position: relative;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-container {
-  width: 1520px;
-  overflow: hidden;
+    width: 90%;
+    overflow: hidden;
 }
 
 .carousel-track {
-  display: flex;
-  gap: 35px;
-  transition: transform 0.5s ease;
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.5s ease;
 }
 
 .carousel-card {
-  width: 483.6756px;
-  height: 304.3449px;
-  position: relative;
-  flex-shrink: 0;
+    flex: 0 0 90%; 
+    position: relative;
 }
 
 .carousel-card img {
-  width: 483.6756px;
-  height: 258.65px;
-  object-fit: cover;
-  border-radius: 6px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .card-title {
-  margin-top: 12px;
-  font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .card-number {
-  position: absolute;
-  width: 68px;
-  height: 19px;
-  top: 283px;
-  left: 415.68px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
 }
 
 .carousel-arrow {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background: #000;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: none; /* Hidden on mobile, shown on larger screens */
 }
 
-.carousel-arrow.left {
-  left: 129px;
-}
-
-.carousel-arrow.right {
-  right: 129px;
-}
-
-
+/* --- Hero Section --- */
 
 .hero-wrapper {
-  width: 1920px;
-  height: 930px;
-  position: relative;
-  margin: auto;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px; /* Space for overlapping cards */
 }
 
 .hero-section {
-  width: 1920px;
-  height: 736px;
-  background: url("./images/desktop/About Section Image Desktop.jpg") center/cover no-repeat;
-  position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-image: url("./images/desktop/About Section Image Desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
 }
 
 .hero-content {
-  width: 702px;
-  position: absolute;
-  top: 100px;
-  left: 303px;
-  color: white;
+    max-width: 600px;
+}
+
+.hero-content p:first-child {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .hero-content h2 {
-  font-size: 40px;
-  margin-bottom: 16px;
+    font-size: 2.5rem;
+    margin: 10px 0 20px;
 }
 
 .hero-content p {
-  font-size: 18px;
-  line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .hero-btn {
-  width: 144px;
-  height: 48px;
-  margin-top: 20px;
-  border: none;
-  background: white;
-  color: #000;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 6px;
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: none;
+    background: white;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background: #f0f0f0;
 }
 
 
+/* --- Feature Cards --- */
+
 .feature-cards {
-  width: 1320px;
-  height: 187.651px;
-  position: absolute;
-  top: 642px;
-  left: 300px;
-  display: flex;
-  gap: 16.11px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    
+    /* Responsive Overlap */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
 }
 
 .feature-card {
-  width: 429.2617px;
-  height: 187.651px;
-  background: white;
-  border-radius: 32.21px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  position: relative;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
 }
 
 .card-icon {
-  width: 80.5369px;
-  height: 80.5369px;
-  position: absolute;
-  top: 54px;
-  left: 37.63px;
-  object-fit: cover;
-}
-
-.card-text {
-  width: 252.3672px;
-  height: 131.221px;
-  position: absolute;
-  top: 28px;
-  left: 138.48px;
+    width: 60px;
+    height: 60px;
 }
 
 .card-text h4 {
-  font-size: 18px;
-  font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .card-text p {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #666;
-}
-
-
-@media (max-width: 768px) {
-  .hero-wrapper {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero-section {
-    width: 100%;
-    height: 300px;
-    background: url("./images/About Section Image ipad.jpg") center/cover no-repeat;
-    border-radius: 32px;
-    margin: auto;
-  }
-
-  .hero-content {
-    position: relative;
-    width: 90%;
-    margin: -60px auto 0;
-    background: #1c697d;
-    color: white;
-    padding: 28px 22px 32px;
-    border-radius: 24px;
-    text-align: center;
-  }
-
-  .hero-btn {
-    margin: 20px auto 0;
-    display: block;
-    background: white;
-    color: #1c697d;
-  }
-
-  .feature-cards {
-    position: static;
-    width: 90%;
-    margin: 32px auto 40px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .feature-card {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border-radius: 24px;
-  }
-
-  .card-icon {
-    position: static;
-    width: 56px;
-    height: 56px;
-  }
-
-  .card-text {
-    position: static;
-    width: auto;
-    height: auto;
-  }
-}
-
-
-
-@media (max-width: 375px) {
-  .hero-section {
-    height: 240px;
-    background: url("./images/mobile/About Section Image Mobile.jpg") center/cover no-repeat;
-    border-radius: 24px;
-  }
-
-  .hero-content {
-    width: 92%;
-    margin-top: -50px;
-    padding: 22px 18px;
-  }
-
-  .hero-content h2 {
-    font-size: 20px;
-  }
-
-  .hero-content p {
-    font-size: 13px;
+    font-size: 0.9rem;
+    color: #666;
     line-height: 1.5;
-  }
+}
 
-  .hero-btn {
-    width: 140px;
-    height: 44px;
-    font-size: 13px;
-  }
+
+/* 2. Tablet Styles */
+
+@media (min-width: 768px) {
+
+    /* --- Carousel --- */
+    .carousel-container { width: 85%; }
+    .carousel-card { flex: 0 0 calc(50% - 1rem); } /* 2 cards */
+    .carousel-arrow { display: block; }
+    .carousel-arrow.left { left: 2%; }
+    .carousel-arrow.right { right: 2%; }
+
+    /* --- Hero Section --- */
+    .hero-section {
+        background-image: url("./images/About\ Section\ Image\ ipad.jpg"); /* Use iPad image */
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 8%;
+    }
+    
+    /* --- Feature Cards --- */
+    .feature-cards {
+        flex-direction: row;
+        width: 90%;
+    }
+    .feature-card {
+        flex: 1;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+}
+
+
+/* 3. Desktop Styles */
+
+@media (min-width: 1200px) {
+
+    /* --- Carousel --- */
+    .carousel-container { width: 80%; max-width: 1520px; }
+    .carousel-card { flex: 0 0 calc(33.333% - 1rem); } /* 3 cards */
+    .carousel-arrow.left { left: calc((100% - 1520px) / 2 - 60px); }
+    .carousel-arrow.right { right: calc((100% - 1520px) / 2 - 60px); }
+
+    /* --- Hero Section --- */
+    .hero-section {
+        background-image: url("./images/desktop/About Section Image Desktop.jpg");
+        min-height: 700px;
+        padding: 0 12%;
+    }
+    .hero-content h2 { font-size: 3rem; }
+    
+    /* --- Feature Cards --- */
+    .feature-card {
+        padding: 35px;
+    }
 }
