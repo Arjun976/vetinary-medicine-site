@@ -226,8 +226,8 @@ body {
     /* --- Carousel --- */
     .carousel-container { width: 80%; max-width: 1520px; }
     .carousel-card { flex: 0 0 calc(33.333% - 1rem); } /* 3 cards */
-    .carousel-arrow.left { left: calc((100% - 1520px) / 2 - 60px); }
-    .carousel-arrow.right { right: calc((100% - 1520px) / 2 - 60px); }
+    .carousel-arrow.left { left: 7%; }
+    .carousel-arrow.right { right: 7%; }
 
     /* --- Hero Section --- */
     .hero-section {
