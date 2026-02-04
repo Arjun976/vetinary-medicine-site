@@ -1,0 +1,206 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+.carousel-wrapper {
+  width: 1920px;
+  height: 404px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  width: 1520px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 35px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  width: 483.6756px;
+  height: 304.3449px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.carousel-card img {
+  width: 483.6756px;
+  height: 258.6500px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card-title {
+  font-family: "Work Sans", sans-serif;
+  
+  top:280.21px;
+  left:0.86px;
+}
+
+.card-number {
+  position: absolute;
+  width: 68px;
+  height: 19px;
+  top:283px;
+  left:415.68px;
+  border: 1px;
+  
+ 
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.carousel-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.carousel-arrow.left {
+  position: absolute;
+  left: 129px;
+  top: 193px;
+  transform: translateY(-50%);
+}
+
+.carousel-arrow.right {
+  position: absolute;
+  right: 129px;
+  top: 193px;
+  transform: translateY(-50%);
+}
+
+/* Hero Section */
+.hero-section {
+  width: 1920px;
+  height: 736px;
+  background-image: url("./images/desktop/About\ Section\ Image\ Desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Text block */
+.hero-content {
+  width: 702px;
+  height: 380px;
+  position: absolute;
+  top: 100px;
+  left: 303px;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Button */
+.hero-btn {
+  width: 144px;
+  height: 48px;
+  position: absolute;
+  top: 520px;
+  left: 300px;
+  padding: 16px 32px;
+  border: none;
+  background: white;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background: #f0f0f0;
+  
+}
+
+.hero-wrapper {
+  width: 1920px;
+  height: 930px;
+  position: relative;
+  margin: auto;
+}
+
+/* Cards row */
+.feature-cards {
+  width: 1320px;
+  height: 187.651px;
+  position: absolute;
+  top: 642px;
+  left: 300px;
+  display: flex;
+  gap: 16.11px;
+}
+
+/* Individual card */
+.feature-card {
+  width: 429.2617px;
+  height: 187.651px;
+  background: white;
+  border-radius: 32.21px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Icon */
+.card-icon {
+  width: 80.5369px;
+  height: 80.5369px;
+  position: absolute;
+  top: 54px;
+  left: 37.63px;
+  object-fit: cover;
+}
+
+/* Text wrapper */
+.card-text {
+  width: 252.3672px;
+  height: 131.221px;
+  position: absolute;
+  top: 28px;
+  left: 138.48px;
+}
+
+/* Heading */
+.card-text h4 {
+  width: 252px;
+  height: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Paragraph */
+.card-text p {
+  width: 241.6107px;
+  height: 92.6174px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+}
